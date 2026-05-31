@@ -1,0 +1,37 @@
+<template>
+	<div class="es-center">
+      <div class="es-center-top">
+          <Map />
+      </div>
+      <Bottom />
+  </div>
+</template>
+
+<script setup>
+import Map from './Map.vue'
+import Bottom from './Bottom.vue'
+</script>
+
+<style scoped>
+/* es-screen-center */
+.es-center {
+	position: relative;
+	height: 1000px;
+	padding: 0 16px;
+  margin-top: 20px;
+	animation: slideAndFade 1.5s;
+}
+.es-center-top {
+  height: calc(100% - 150px);
+}
+@keyframes slideAndFade {
+  0% {
+    transform: translateY(218px);
+		opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+		opacity: 1;
+  }
+}
+</style>
