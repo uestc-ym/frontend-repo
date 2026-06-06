@@ -1,0 +1,21 @@
+# 忽略所有子项目的 node_modules
+**/node_modules/
+
+# 忽略构建产物
+**/dist/
+**/build/
+
+# 如果 client 下还有特定文件需要忽略
+client/.vscode/
+client/.nuxt/      # 如果是 Nuxt 项目
+client/.output/    # Nuxt 输出
+
+# server 特定忽略
+server/dist/
+server/node_modules/
+
+# 忽略日志文件
+*.log
+
+# 忽略环境变量文件
+.env*

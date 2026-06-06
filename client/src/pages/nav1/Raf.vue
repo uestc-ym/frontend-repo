@@ -57,7 +57,7 @@
   
   <script setup>
   import { ref, nextTick } from 'vue'
-  
+   let a = 111
   // 响应式数据
   const displayList = ref([])
   const isRendering = ref(false)

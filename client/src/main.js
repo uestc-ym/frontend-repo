@@ -21,26 +21,30 @@ import { Menu, Button } from 'ant-design-vue';
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
-  { 
-    path: '/nav1', 
+  {
+    path: '/nav1',
     children: [
       {
-        path: 'gesture', 
-        component: GesturePage
-      }, {
-        path: 'largescreenvisual', 
-        component: LargeScreenVisualPage
-      }, {
-        path: 'watermark', 
-        component: WaterMark
-      }, {
-        path: 'font', 
-        component: Font
-      }, {
-        path: 'raf', 
-        component: RafPage
-      }
-    ]
+        path: 'gesture',
+        component: GesturePage,
+      },
+      {
+        path: 'largescreenvisual',
+        component: LargeScreenVisualPage,
+      },
+      {
+        path: 'watermark',
+        component: WaterMark,
+      },
+      {
+        path: 'font',
+        component: Font,
+      },
+      {
+        path: 'raf',
+        component: RafPage,
+      },
+    ],
   },
 ];
 
@@ -54,6 +58,4 @@ const app = createApp(App);
 app.component('a-menu', Menu);
 app.component('a-button', Button);
 
-app
-    .use(router)
-    .mount('#app');
+app.use(router).mount('#app');
