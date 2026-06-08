@@ -1,1 +1,8 @@
-npx lint-staged
+#!/usr/bin/env sh
+echo ">>> Git hook triggered! <<<"
+
+# 直接调用 lint-staged
+cd client && ./node_modules/.bin/lint-staged
+
+# 或者添加 node_modules/.bin 到 PATH
+# export PATH="./client/node_modules/.bin:$PATH"

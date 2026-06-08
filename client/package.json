@@ -10,7 +10,7 @@
     "font": "node public/font/ttf2woff2.js",
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
-    "prepare": "husky"
+    "postinstall": "git config core.hooksPath client/.husky"
   },
   "dependencies": {
     "@element-plus/icons-vue": "2.1.0",
