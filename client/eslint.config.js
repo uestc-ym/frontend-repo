@@ -10,8 +10,8 @@ export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,vue}'],
     rules: {
-      'no-unused-vars': 'warn',
-      'no-console': 'warn',
+      // 'no-unused-vars': 'warn',
+      // 'no-console': 'warn',
       // 'vue/multi-word-component-names': 'off',
       // 'no-var': 'error',
       // 'prefer-const': 'warn',
