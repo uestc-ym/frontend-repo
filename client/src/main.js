@@ -18,9 +18,6 @@ import { Menu, Button } from 'ant-design-vue';
 // 大文件分片上传、ffmpeg音视频录播、分片优化;
 // 简历todo：npm->pnpm、eslint/prettier/husky/lint-stage、create-app-cli
 
-let abc = 'dsds';
-let unusedvar = 89;
-
 const routes = [
   { path: '/', component: HomePage },
   { path: '/about', component: AboutPage },
