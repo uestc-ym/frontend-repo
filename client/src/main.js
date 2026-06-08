@@ -19,6 +19,7 @@ import { Menu, Button } from 'ant-design-vue';
 // 简历todo：npm->pnpm、eslint/prettier/husky/lint-stage、create-app-cli
 
 let abc = 'dsds';
+let unusedvar = 89;
 
 const routes = [
   { path: '/', component: HomePage },
